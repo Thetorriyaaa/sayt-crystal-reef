@@ -1104,32 +1104,63 @@ body {
 }
 
 
-/* ===== ТОЛЬКО ТЕЛЕФОН ===== */
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ ГЛАВНОЙ ===== */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+
+    .screen {
+        max-width: none;
+    }
+
+    /* 1 экран */
 
     .screen1 {
-        height: 690px;
+        height: 720px;
+    }
+
+    .nav-bar {
+        top: 30px;
+        width: calc(100% - 32px);
+        min-height: 80px;
+        height: auto;
+        padding: 14px 18px;
+        border-radius: 50px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .nav {
+        font-size: 15px;
+    }
+
+    .icon {
+        width: 32px;
+        height: 32px;
     }
 
     .main-box {
-        top: 200px;
-        height: 340px;
+        top: 210px;
         width: 84%;
+        height: 360px;
         border-radius: 220px;
     }
 
     .img-left {
         width: 170px;
         left: 15%;
-        top: 340px;
+        top: 335px;
     }
 
     .text {
         left: 15%;
         transform: none;
-
-        top: 470px;
+        top: 465px;
         width: 170px;
 
         font-size: 19px;
@@ -1156,15 +1187,92 @@ body {
         top: 315px;
     }
 
-    /* КНИГА ВЫШЕ */
+    /* 2 экран */
+
+    .screen2 {
+        height: 1850px;
+        min-height: 1850px;
+        overflow: visible;
+    }
+
+    .wave-wrapper {
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 100vw;
+        min-width: 2000px;
+        height: 1500px;
+
+        background-size: 2600px auto;
+        animation-duration: 16s;
+    }
+
+    .screen2-title {
+        top: 40px;
+        width: 90%;
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .card {
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 90%;
+        max-width: 420px;
+        height: 320px;
+        border-radius: 40px;
+    }
+
+    .card1 {
+        top: 160px;
+    }
+
+    .card3 {
+        top: 520px;
+    }
+
+    .card2 {
+        top: 880px;
+    }
+
+    .card4 {
+        top: 1240px;
+    }
+
+    .t {
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 78%;
+        max-width: 330px;
+
+        font-size: 24px;
+        line-height: 1.1;
+    }
+
+    .t1 {
+        top: 200px;
+    }
+
+    .t2 {
+        top: 560px;
+    }
+
+    .t4 {
+        top: 920px;
+    }
+
+    .t3 {
+        top: 1280px;
+    }
 
     .book-wrapper {
         left: calc(50% - 115px);
-        top: 90px;
+        top: 110px;
         width: 230px;
     }
-
-    /* ЗВЕЗДА ЧУТЬ НИЖЕ */
 
     .octagon {
         left: calc(50% - 65px);
@@ -1172,15 +1280,15 @@ body {
         width: 130px;
     }
 
-    /* МЕДУЗА */
-
     .jelly {
         left: calc(50% - 50px);
-        top: 1320px;
+        top: 1300px;
         width: 160px;
     }
 
-    /* ПУЗЫРЬКИ ЧУТЬ ВЫШЕ */
+    .circle {
+        display: block;
+    }
 
     .c1 {
         width: 65px;
@@ -1223,11 +1331,47 @@ body {
         left: 70%;
         top: 1060px;
     }
-}
-/* только телефон — поднять книгу */
 
-@media (max-width: 480px) {
-    .book-wrapper {
-        top: 40px;
+    /* 4 экран */
+
+    .screen4 {
+        height: 1000px;
+    }
+
+    .sub-left,
+    .sub-right {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: calc(100% - 40px);
+        margin: 30px auto;
+    }
+
+    .sub-left {
+        height: 380px;
+    }
+
+    .sub-right {
+        height: 430px;
+    }
+
+    .sub-text {
+        font-size: 28px;
+    }
+
+    .input,
+    .button {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        font-size: 26px;
+    }
+
+    .button {
+        top: 360px;
+    }
+
+    .person {
+        display: none;
     }
 }
