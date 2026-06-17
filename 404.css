@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #021033;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Brawler';
+    src: url('fonts/Brawler-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+.error-page {
+    min-height: 100vh;
+    background: #021033;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 24px;
+}
+
+.error-content {
+    width: 100%;
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.error-content h1 {
+    font-family: 'Brawler';
+    font-size: clamp(60px, 8vw, 120px);
+    font-weight: 400;
+    color: #B1DCFF;
+
+    margin-bottom: 45px;
+}
+
+.error-main-text {
+    max-width: 760px;
+
+    font-family: 'Brawler';
+    font-size: clamp(26px, 3vw, 44px);
+    line-height: 1.1;
+    color: white;
+
+    margin-bottom: 45px;
+}
+
+.error-description {
+    max-width: 900px;
+
+    font-family: 'Brawler';
+    font-size: clamp(22px, 2.5vw, 36px);
+    line-height: 1.15;
+    color: white;
+
+    margin-bottom: 90px;
+}
+
+.error-bottom-text {
+    max-width: 700px;
+
+    font-family: 'Brawler';
+    font-size: clamp(24px, 3vw, 40px);
+    line-height: 1.1;
+    color: white;
+
+    margin-bottom: 35px;
+}
+
+.return-btn {
+    width: min(90%, 875px);
+    min-height: 117px;
+
+    background: #70A8CD;
+    border-radius: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 40px;
+
+    font-family: 'Brawler';
+    font-size: clamp(24px, 3vw, 40px);
+    color: white;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.return-btn:hover {
+    transform: scale(1.03);
+}
+
+/* адаптив */
+
+@media (max-width: 768px) {
+    .error-page {
+        padding: 40px 20px;
+    }
+
+    .error-content h1 {
+        margin-bottom: 35px;
+    }
+
+    .error-main-text {
+        margin-bottom: 35px;
+    }
+
+    .error-description {
+        margin-bottom: 70px;
+    }
+
+    .return-btn {
+        min-height: 90px;
+        border-radius: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .return-btn {
+        min-height: 76px;
+        border-radius: 45px;
+    }
+}
+.error-toast {
+    position: fixed;
+
+    top: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #70A8CD;
+    color: white;
+
+    padding: 20px 40px;
+
+    border-radius: 50px;
+
+    font-family: 'Brawler';
+    font-size: 28px;
+
+    z-index: 9999;
+
+    animation: toastShow 4s forwards;
+}
+
+@keyframes toastShow {
+
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+
+    15% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    85% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+        visibility: hidden;
+    }
+}

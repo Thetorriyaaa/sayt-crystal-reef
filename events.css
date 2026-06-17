@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #021033;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Quattrocento';
+    src: url('fonts/Quattrocento-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Brawler';
+    src: url('fonts/Brawler-Regular.ttf') format('truetype');
+}
+
+/* ШАПКА */
+.events-header {
+    position: relative;
+    height: 220px;
+}
+
+.events-nav-bar {
+    position: absolute;
+    top: 73px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 56px);
+    max-width: 1384px;
+    height: 117px;
+    background: #70A8CD;
+    border-radius: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.events-logo {
+    font-family: 'Quattrocento';
+    font-size: 64px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.events-menu {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.events-nav {
+    font-family: 'Brawler';
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.events-icon {
+    width: 60px;
+    height: 60px;
+    background: url("images/корзина.png") center/contain no-repeat;
+}
+
+.events-page {
+    background: #021033;
+    min-height: 100vh;
+}
+
+/* ===== АДАПТИВ ШАПКИ 769px–1100px ===== */
+@media (min-width: 769px) and (max-width: 1100px) {
+    .events-logo {
+        font-size: 42px;
+    }
+
+    .events-nav {
+        font-size: 26px;
+    }
+
+    .events-menu {
+        gap: 24px;
+    }
+
+    .events-icon {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+@media (max-width: 768px) {
+    .events-header {
+        height: 140px;
+    }
+
+    .events-nav-bar {
+        top: 30px;
+        width: calc(100% - 32px);
+        min-height: 80px;
+        height: auto;
+        padding: 14px 18px;
+        border-radius: 50px;
+    }
+
+    .events-logo {
+        font-size: 24px;
+    }
+
+    .events-menu {
+        display: flex;
+        gap: 10px;
+    }
+
+    .events-nav {
+        font-size: 15px;
+    }
+
+    .events-icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .events-logo {
+        font-size: 20px;
+    }
+
+    .events-menu {
+        gap: 6px;
+    }
+
+    .events-nav {
+        font-size: 12px;
+    }
+
+    .events-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .events-nav-bar {
+        padding: 12px 14px;
+    }
+}
+
+.events-page {
+    background: #021033;
+    min-height: 100vh;
+}
+
+/* ===== ВЕРХНИЙ БЛОК ===== */
+.events-intro {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.events-title {
+    font-family: 'Brawler';
+    font-size: clamp(30px, 5.2vw, 75px);
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.events-text {
+    width: 72%;
+    max-width: 1027px;
+    margin: clamp(40px, 6vw, 90px) auto 0;
+    font-family: 'Brawler';
+    font-size: clamp(18px, 2.8vw, 40px);
+    line-height: 1.05;
+    color: white;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+/* ===== ПЛАКАТЫ ===== */
+.posters-section {
+    margin-top: clamp(60px, 8vw, 120px);
+}
+
+.posters-line {
+    width: 100%;
+    background: #6B5EA4;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 264px));
+    justify-content: center;
+    align-items: center;
+    gap: clamp(10px, 8vw, 135px);
+    padding: clamp(28px, 4vw, 53px) 0;
+    margin-bottom: clamp(70px, 12vw, 205px);
+}
+
+.posters-line img {
+    width: 100%;
+    max-width: 264px;
+    min-width: 0;
+    height: auto;
+    display: block;
+}
+
+/* ===== ЭКСПОНАТЫ НЕДЕЛИ ===== */
+.weekly-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+
+.weekly-section .events-text {
+    margin-top: clamp(40px, 6vw, 90px);
+}
+
+.weekly-grid {
+    width: 88%;
+    max-width: 1262px;
+    margin: clamp(50px, 7vw, 90px) auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(10px, 4vw, 61px);
+}
+
+.weekly-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(14px, 4vw, 64px);
+}
+
+.weekly-image {
+    width: 100%;
+    min-width: 0;
+    background: #372F62;
+    border-radius: clamp(14px, 2.2vw, 30px);
+    overflow: hidden;
+}
+
+.weekly-image img {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    display: block;
+}
+
+.weekly-name {
+    min-height: clamp(60px, 21vw, 308px);
+    background: #70A8CD;
+    border-radius: clamp(16px, 3.5vw, 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(8px, 2vw, 30px);
+    font-family: 'Brawler';
+    font-size: clamp(10px, 2.7vw, 40px);
+    line-height: 1;
+    color: white;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+/* ===== ДО 768px ===== */
+@media (max-width: 768px) {
+    .events-intro {
+        padding-top: 20px;
+    }
+
+    .events-text {
+        width: 86%;
+        line-height: 1.15;
+    }
+
+    .posters-line {
+        grid-template-columns: repeat(3, minmax(0, 180px));
+        gap: clamp(8px, 5vw, 35px);
+    }
+
+    .weekly-grid {
+        width: 92%;
+        gap: clamp(8px, 3vw, 24px);
+    }
+
+    .weekly-card {
+        gap: clamp(10px, 3vw, 25px);
+    }
+
+    .weekly-name {
+        min-height: clamp(55px, 18vw, 120px);
+        font-size: clamp(9px, 3.3vw, 18px);
+    }
+}
+
+/* ===== ДО 480px ===== */
+@media (max-width: 480px) {
+    .events-text {
+        width: 88%;
+    }
+
+    .posters-line {
+        grid-template-columns: repeat(3, minmax(0, 120px));
+        gap: 10px;
+        padding: 30px 0;
+    }
+
+    .weekly-grid {
+        width: 94%;
+        gap: 10px;
+    }
+
+    .weekly-name {
+        min-height: 70px;
+        font-size: 12px;
+        border-radius: 18px;
+    }
+}
+.poster {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.poster:hover {
+    transform: scale(1.03);
+}
+
+.poster-modal {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, .85);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .3s;
+
+    z-index: 9999;
+}
+
+.poster-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.poster-modal-img {
+    max-width: 90vw;
+    max-height: 90vh;
+
+    border-radius: 20px;
+}
+.weekly-name {
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.weekly-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.weekly-name.is-flipped .weekly-inner {
+    transform: rotateY(180deg);
+}
+
+.weekly-front,
+.weekly-back {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    backface-visibility: hidden;
+
+    font-family: 'Brawler';
+    color: white;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.weekly-back {
+    transform: rotateY(180deg);
+    font-size: 24px;
+}

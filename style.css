@@ -1,0 +1,1217 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: #021033;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Quattrocento';
+    src: url('fonts/Quattrocento-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Brawler';
+    src: url('fonts/Brawler-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+.screen {
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.frame {
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* ===== 1 ЭКРАН ===== */
+
+.screen1 {
+    height: 1016px;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 73px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: calc(100% - 56px);
+    max-width: 1384px;
+    height: 117px;
+
+    background: #70A8CD;
+    border-radius: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+    z-index: 20;
+}
+
+.logo {
+    font-family: 'Quattrocento';
+    font-size: 64px;
+    color: #fff;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav {
+    font-family: 'Brawler';
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background: url("images/корзина.png") no-repeat center;
+    background-size: contain;
+}
+
+.main-box {
+    position: absolute;
+    top: 305px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 84%;
+    max-width: 1214px;
+    height: 638px;
+
+    background: #6B5EA4;
+    border: 7px solid #70A8CD;
+    border-radius: 463px;
+}
+
+.text {
+    position: absolute;
+
+    left: calc(50% - 520px);
+    top: 731px;
+
+    width: 472px;
+
+    font-family: 'Brawler';
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+    color: #fff;
+
+    text-align: center;
+
+    z-index: 20;
+}
+
+.img-left {
+    position: absolute;
+    left: calc(50% - 520px);
+    top: 462px;
+    width: 472px;
+    z-index: 6;
+}
+
+.crystal {
+    position: absolute;
+    width: 279px;
+    z-index: 6;
+}
+
+.crystal1 {
+    left: calc(50% + 65px);
+    top: 386px;
+}
+
+.crystal2 {
+    left: calc(50% + 83px);
+    top: 376px;
+    transform: rotate(25deg);
+}
+
+.crystal3 {
+    left: calc(50% - 78px);
+    top: 376px;
+    transform: scaleX(-1) rotate(20deg);
+}
+
+/* ===== 2 ЭКРАН ===== */
+
+.screen2 {
+    min-height: 1764px;
+    background: #021033;
+    overflow: visible;
+}
+/* волна */
+
+.wave-wrapper {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100vw;
+    min-width: 2000px;
+    height: 1489px;
+    overflow: hidden;
+
+    background-image: url("images/волна.png");
+    background-repeat: repeat-x;
+    background-size: 3934px auto;
+    background-position: 0 0;
+
+    animation: waveBg 18s linear infinite;
+    z-index: 0;
+}
+
+@keyframes waveBg {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: -3934px;
+    }
+}
+
+.screen2-title {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    font-family: 'Brawler';
+    font-size: 48px;
+    color: white;
+    text-align: center;
+
+    z-index: 10;
+}
+
+/* карточки */
+
+.card {
+    position: absolute;
+    width: 635px;
+    height: 645px;
+    background: #372F62;
+    border-radius: 50px;
+    z-index: 2;
+}
+
+.card1 {
+    left: calc(50% - 620px);
+    top: 286px;
+}
+
+.card2 {
+    left: calc(50% - 620px);
+    top: 981px;
+}
+
+.card3 {
+    left: calc(50% + 30px);
+    top: 286px;
+}
+
+.card4 {
+    left: calc(50% + 30px);
+    top: 981px;
+}
+
+/* текст */
+
+.t {
+    position: absolute;
+    width: 500px;
+
+    font-family: 'Brawler';
+    font-size: 40px;
+    color: white;
+
+    z-index: 5;
+}
+
+.t1 {
+    left: calc(50% - 570px);
+    top: 331px;
+}
+
+.t2 {
+    left: calc(50% + 78px);
+    top: 331px;
+}
+
+.t3 {
+    left: calc(50% + 78px);
+    top: 1032px;
+}
+
+.t4 {
+    left: calc(50% - 570px);
+    top: 1032px;
+}
+
+/* картинки 2 экрана */
+
+.book-wrapper {
+    position: absolute;
+    left: calc(50% - 520px);
+    top: 321px;
+
+    width: 444px;
+    height: auto;
+
+    animation: circleMove 6s linear infinite;
+    z-index: 6;
+}
+
+.book {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.octagon {
+    position: absolute;
+    width: 238px;
+    left: calc(50% + 228px);
+    top: 609px;
+
+    animation: spin 6s linear infinite;
+    transform-origin: center;
+    z-index: 6;
+}
+
+.jelly {
+    position: absolute;
+    width: 279px;
+    left: calc(50% + 347px);
+    top: 1208px;
+
+    animation: jellyFloat 4s ease-in-out infinite;
+    z-index: 6;
+}
+
+/* круги */
+
+.circle {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    z-index: 4;
+
+    animation-name: bubblePulse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.c1 {
+    width: 168px;
+    height: 168px;
+    left: calc(50% - 581px);
+    top: 1333px;
+    animation-duration: 3.8s;
+    animation-delay: 0s;
+}
+
+.c2 {
+    width: 48px;
+    height: 48px;
+    left: calc(50% - 433px);
+    top: 1513px;
+    animation-duration: 2.6s;
+    animation-delay: .7s;
+}
+
+.c3 {
+    width: 77px;
+    height: 77px;
+    left: calc(50% - 191px);
+    top: 1436px;
+    animation-duration: 3.2s;
+    animation-delay: 1.4s;
+}
+
+.c4 {
+    width: 82px;
+    height: 82px;
+    left: calc(50% - 360px);
+    top: 1354px;
+    animation-duration: 2.9s;
+    animation-delay: .3s;
+}
+
+.c5 {
+    width: 123px;
+    height: 123px;
+    left: calc(50% - 225px);
+    top: 1242px;
+    animation-duration: 4.1s;
+    animation-delay: 1s;
+}
+
+.c6 {
+    width: 60px;
+    height: 60px;
+    left: calc(50% - 70px);
+    top: 1380px;
+    animation-duration: 2.4s;
+    animation-delay: 1.8s;
+}
+
+/* ===== 3 ЭКРАН ===== */
+
+.screen3 {
+    min-height: 0;
+}
+
+/* ===== 4 ЭКРАН ===== */
+
+.screen4 {
+    height: 735px;
+    background: #021033;
+    z-index: 5;
+}
+
+.subscribe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sub-left {
+    position: absolute;
+    left: calc(50% - 660px);
+    top: 38px;
+
+    width: 457px;
+    height: 549px;
+
+    background: #6B5EA4;
+    border-radius: 50px;
+    padding: 40px;
+}
+
+.sub-text {
+    font-family: 'Brawler';
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.1;
+}
+
+.triangles {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    width: 90%;
+}
+
+.sub-right {
+    position: absolute;
+    left: calc(50% - 180px);
+    top: 38px;
+
+    width: 810px;
+    height: 549px;
+
+    background: #6B5EA4;
+    border-radius: 50px;
+}
+
+.input {
+    position: absolute;
+    left: 100px;
+
+    width: 385px;
+    height: 99px;
+
+    border-radius: 68px;
+    border: none;
+    outline: none;
+
+    padding-left: 30px;
+
+    font-family: 'Brawler';
+    font-size: 32px;
+    color: #6B5EA4;
+}
+
+.name {
+    top: 70px;
+    background: #fff;
+}
+
+.phone {
+    top: 210px;
+    background: #fff;
+}
+
+.button {
+    position: absolute;
+    left: 100px;
+    top: 350px;
+
+    width: 385px;
+    height: 99px;
+
+    background: #70A8CD;
+    border-radius: 68px;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Brawler';
+    font-size: 32px;
+    color: #fff;
+}
+
+.person {
+    position: absolute;
+    top: 90px;
+    left: calc(50% + 380px);
+
+    height: 450px;
+    object-fit: contain;
+}
+
+/* ===== АНИМАЦИИ ===== */
+
+@keyframes circleMove {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(12px, -10px);
+    }
+
+    50% {
+        transform: translate(18px, 0px);
+    }
+
+    75% {
+        transform: translate(12px, 10px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes jellyFloat {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bubblePulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.35);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ===== ДО 1300px ===== */
+
+@media (max-width: 1300px) {
+    .logo {
+        font-size: 52px;
+    }
+
+    .nav {
+        font-size: 32px;
+    }
+
+    .menu {
+        gap: 30px;
+    }
+
+    .card {
+        width: 44%;
+    }
+
+    .card1,
+    .card2 {
+        left: 5%;
+    }
+
+    .card3,
+    .card4 {
+        left: 51%;
+    }
+
+    .t {
+        width: 36%;
+        font-size: 34px;
+    }
+
+    .t1,
+    .t4 {
+        left: 8%;
+    }
+
+    .t2,
+    .t3 {
+        left: 54%;
+    }
+}
+
+/* ===== ПРОМЕЖУТОЧНЫЙ АДАПТИВ 769px–1100px ===== */
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    /* 1 экран */
+/* 1 экран */
+
+    .screen1 {
+        height: 900px;
+    }
+
+    .logo {
+        font-size: 42px;
+    }
+
+    .nav {
+        font-size: 26px;
+    }
+
+    .menu {
+        gap: 24px;
+    }
+
+    .icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .main-box {
+        top: 260px;
+        width: 86%;
+        height: 520px;
+    }
+
+    .img-left {
+        width: 300px;
+        left: calc(50% - 330px);
+        top: 430px;
+    }
+
+    .text {
+        left: calc(50% - 305px);
+        top: 610px;
+        font-size: 26px;
+        width: 260px;
+    }
+
+    .crystal {
+        width: 175px;
+    }
+
+    .crystal1 {
+        left: calc(50% + 55px);
+        top: 380px;
+    }
+
+    .crystal2 {
+        left: calc(50% + 70px);
+        top: 370px;
+    }
+
+    .crystal3 {
+        left: calc(50% - 35px);
+        top: 380px;
+    }
+
+    /* 2 экран */
+
+    .screen2 {
+        height: 1764px;
+    }
+
+    .card {
+        width: 42%;
+        height: 560px;
+    }
+
+    .card1,
+    .card2 {
+        left: 5%;
+    }
+
+    .card3,
+    .card4 {
+        left: 53%;
+    }
+
+    .card1,
+    .card3 {
+        top: 286px;
+    }
+
+    .card2,
+    .card4 {
+        top: 900px;
+    }
+
+    .t {
+        width: 34%;
+        font-size: 30px;
+    }
+
+    .t1,
+    .t4 {
+        left: 8%;
+    }
+
+    .t2,
+    .t3 {
+        left: 56%;
+    }
+
+    .t1,
+    .t2 {
+        top: 330px;
+    }
+
+    .t3,
+    .t4 {
+        top: 950px;
+    }
+
+    .book-wrapper {
+        width: 320px;
+        left: calc(50% - 365px);
+        top: 360px;
+    }
+
+    .octagon {
+        width: 180px;
+        left: calc(50% + 120px);
+        top: 570px;
+    }
+
+    .jelly {
+        width: 220px;
+        left: calc(50% + 150px);
+        top: 1120px;
+    }
+
+    .circle {
+        display: block;
+    }
+
+    .c1 {
+        width: 110px;
+        height: 110px;
+        left: 8%;
+        top: 1150px;
+    }
+
+    .c2 {
+        width: 35px;
+        height: 35px;
+        left: 19%;
+        top: 1390px;
+    }
+
+    .c3 {
+        width: 55px;
+        height: 55px;
+        left: 29%;
+        top: 1340px;
+    }
+
+    .c4 {
+        width: 60px;
+        height: 60px;
+        left: 23%;
+        top: 1255px;
+    }
+
+    .c5 {
+        width: 85px;
+        height: 85px;
+        left: 31%;
+        top: 1180px;
+    }
+
+    .c6 {
+        width: 42px;
+        height: 42px;
+        left: 40%;
+        top: 1300px;
+    }
+
+    /* 4 экран */
+
+    .screen4 {
+        height: 760px;
+    }
+
+    .sub-left {
+        left: 4%;
+        width: 34%;
+    }
+
+    .sub-right {
+        left: 40%;
+        width: 56%;
+    }
+
+    .sub-text {
+        font-size: 32px;
+    }
+
+    .input,
+    .button {
+        left: 60px;
+        width: 340px;
+        height: 86px;
+        font-size: 28px;
+    }
+
+    .person {
+        display: none;
+    }
+}
+
+/* ===== ДО 900px ===== */
+/* ===== ДО 768px ===== */
+
+@media (max-width: 768px) {
+    .screen {
+        max-width: none;
+    }
+
+    /* ===== 1 ЭКРАН ===== */
+
+    .screen1 {
+        height: 820px;
+    }
+
+    .nav-bar {
+        top: 30px;
+        width: calc(100% - 32px);
+        min-height: 80px;
+        height: auto;
+        padding: 14px 18px;
+        border-radius: 50px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .menu {
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav {
+        font-size: 15px;
+    }
+
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .main-box {
+        top: 220px;
+        width: 84%;
+        height: 430px;
+        border-radius: 220px;
+    }
+
+    .text {
+        position: absolute;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        top: 560px;
+        width: 260px;
+
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .img-left {
+        top: 360px;
+        left: 12%;
+        width: 220px;
+        /* было 300px */
+    }
+
+    .crystal {
+        width: 120px;
+        /* было 170px */
+    }
+
+    .crystal1 {
+        left: 52%;
+        top: 310px;
+    }
+
+    .crystal2 {
+        left: 55%;
+        top: 300px;
+    }
+
+    .crystal3 {
+        left: 43%;
+        top: 310px;
+    }
+
+    /* ===== 2 ЭКРАН ===== */
+
+   .screen2 {
+       min-height: 1764px;
+       background: #021033;
+       overflow: visible;
+   }
+           .wave-wrapper {
+               position: absolute;
+               top: 250px;
+               left: 50%;
+               transform: translateX(-50%);
+    
+               width: 100vw;
+               min-width: 2000px;
+               height: 1489px;
+               overflow: hidden;
+    
+               background-image: url("images/волна.png");
+               background-repeat: repeat-x;
+               background-size: 3934px auto;
+               background-position: 0 0;
+    
+               animation: waveBg 18s linear infinite;
+               z-index: 0;
+           }
+    .screen2-title {
+        top: 40px;
+        width: 90%;
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .card {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 420px;
+        height: 320px;
+        border-radius: 40px;
+    }
+
+    .card1 {
+        top: 160px;
+    }
+
+    .card3 {
+        top: 520px;
+    }
+
+    .card2 {
+        top: 880px;
+    }
+
+    .card4 {
+        top: 1240px;
+    }
+
+    .t {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 78%;
+        max-width: 330px;
+        font-size: 24px;
+        line-height: 1.1;
+    }
+
+    .t1 {
+        top: 200px;
+    }
+
+    .t2 {
+        top: 560px;
+    }
+
+    .t4 {
+        top: 920px;
+    }
+
+    .t3 {
+        top: 1280px;
+    }
+
+    .book-wrapper {
+        left: calc(50% - 115px);
+        top: 180px;
+        width: 230px;
+        animation: circleMove 6s linear infinite;
+    }
+
+    .octagon {
+        left: calc(50% - 65px);
+        top: 650px;
+        width: 130px;
+    }
+
+    .jelly {
+        left: calc(50% - 50px);
+        top: 1320px;
+        width: 160px;
+    }
+
+    .circle {
+        display: block;
+    }
+
+    .c1 {
+        width: 65px;
+        height: 65px;
+        left: 30%;
+        top: 1030px;
+    }
+
+    .c2 {
+        width: 20px;
+        height: 20px;
+        left: 58%;
+        top: 1160px;
+    }
+
+    .c3 {
+        width: 32px;
+        height: 32px;
+        left: 55%;
+        top: 1080px;
+    }
+
+    .c4 {
+        width: 36px;
+        height: 36px;
+        left: 66%;
+        top: 1030px;
+    }
+
+    .c5 {
+        width: 50px;
+        height: 50px;
+        left: 48%;
+        top: 1000px;
+    }
+
+    .c6 {
+        width: 25px;
+        height: 25px;
+        left: 70%;
+        top: 1110px;
+    }
+
+    /* ===== 4 ЭКРАН ===== */
+
+    .screen4 {
+        height: 1000px;
+    }
+
+    .sub-left,
+    .sub-right {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: calc(100% - 40px);
+        margin: 30px auto;
+    }
+
+    .sub-left {
+        height: 380px;
+    }
+
+    .sub-right {
+        height: 430px;
+    }
+
+    .sub-text {
+        font-size: 28px;
+    }
+
+    .input,
+    .button {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        font-size: 26px;
+    }
+
+    .button {
+        top: 360px;
+    }
+
+    .person {
+        display: none;
+    }
+}
+
+/* ===== ДО 480px ===== */
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu {
+        gap: 6px;
+    }
+
+    .nav {
+        font-size: 12px;
+    }
+
+    .icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .nav-bar {
+        padding: 12px 14px;
+    }
+
+    .screen1 {
+        height: 760px;
+    }
+
+    .main-box {
+        top: 210px;
+        height: 390px;
+    }
+
+    .img-left {
+        width: 250px;
+        top: 335px;
+    }
+
+    .text {
+        top: 535px;
+        font-size: 22px;
+    }
+
+    .crystal {
+        width: 135px;
+    }
+
+    .screen2 {
+        height: 1750px;
+        min-height: 1750px;
+    }
+
+    .card {
+        height: 300px;
+    }
+
+    .card1 {
+        top: 150px;
+    }
+
+    .card3 {
+        top: 490px;
+    }
+
+    .card2 {
+        top: 830px;
+    }
+
+    .card4 {
+        top: 1170px;
+    }
+
+    .t1 {
+        top: 190px;
+    }
+
+    .t2 {
+        top: 530px;
+    }
+
+    .t4 {
+        top: 870px;
+    }
+
+    .t3 {
+        top: 1210px;
+    }
+
+    .book-wrapper {
+        left: calc(50% - 95px);
+        top: 275px;
+        width: 190px;
+    }
+
+    .octagon {
+        left: calc(50% - 55px);
+        top: 610px;
+        width: 110px;
+    }
+
+    .jelly {
+        left: calc(50% - 70px);
+        top: 1290px;
+        width: 140px;
+    }
+
+    .circle {
+        display: none;
+    }
+}
