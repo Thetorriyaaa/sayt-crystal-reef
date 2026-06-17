@@ -1219,7 +1219,7 @@ body {
 
 @media (max-width: 480px) {
     .book-wrapper {
-        top: 250px;
+        top: 20px;
         /* книга выше/ниже */
         width: 185px;
     }
