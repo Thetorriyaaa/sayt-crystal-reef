@@ -886,7 +886,7 @@ body {
 
     .img-left {
         top: 360px;
-        left: 12%;
+        left: 5%;
         width: 220px;
         
     }
@@ -1108,42 +1108,50 @@ body {
 
 @media (max-width: 480px) {
     .screen1 {
-        height: 720px;
+        height: 690px;
     }
 
     .main-box {
-        top: 210px;
-        height: 360px;
+        top: 200px;
+        height: 340px;
+        width: 84%;
+        border-radius: 220px;
     }
 
     .img-left {
-        width: 190px;
-        left: 13%;
-        top: 350px;
+        width: 170px;
+        left: 15%;
+        top: 340px;
     }
 
     .text {
-        top: 500px;
-        width: 220px;
-        font-size: 20px;
+        left: 15%;
+        transform: none;
+
+        top: 485px;
+        width: 170px;
+
+        font-size: 19px;
+        line-height: 1.05;
+        text-align: center;
     }
 
     .crystal {
-        width: 105px;
+        width: 95px;
     }
 
     .crystal1 {
-        left: 56%;
-        top: 320px;
+        left: 57%;
+        top: 315px;
     }
 
     .crystal2 {
-        left: 59%;
-        top: 310px;
+        left: 60%;
+        top: 305px;
     }
 
     .crystal3 {
         left: 47%;
-        top: 320px;
+        top: 315px;
     }
 }
