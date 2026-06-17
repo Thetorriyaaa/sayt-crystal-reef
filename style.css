@@ -1212,6 +1212,73 @@ body {
     }
 
     .circle {
-        display: none;
+        display: block;
+    }
+}
+/* ===== IPHONE PRO MAX / широкий телефон ===== */
+
+@media (max-width: 480px) {
+    .book-wrapper {
+        top: 250px;
+        /* книга выше/ниже */
+        width: 185px;
+    }
+
+    .octagon {
+        top: 635px;
+        /* восьмиугольник ниже */
+        width: 110px;
+    }
+
+    .jelly {
+        top: 1240px;
+        /* медуза выше */
+        width: 140px;
+    }
+
+    .circle {
+        display: block;
+    }
+
+    .c1 {
+        width: 50px;
+        height: 50px;
+        left: 28%;
+        top: 1020px;
+    }
+
+    .c2 {
+        width: 18px;
+        height: 18px;
+        left: 52%;
+        top: 1125px;
+    }
+
+    .c3 {
+        width: 28px;
+        height: 28px;
+        left: 58%;
+        top: 1075px;
+    }
+
+    .c4 {
+        width: 30px;
+        height: 30px;
+        left: 68%;
+        top: 1035px;
+    }
+
+    .c5 {
+        width: 42px;
+        height: 42px;
+        left: 45%;
+        top: 1000px;
+    }
+
+    .c6 {
+        width: 22px;
+        height: 22px;
+        left: 73%;
+        top: 1110px;
     }
 }
