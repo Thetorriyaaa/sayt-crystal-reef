@@ -19,7 +19,7 @@ body {
     src: url('fonts/Brawler-Regular.ttf') format('truetype');
 }
 
-/* ШАПКА */
+
 
 .about-header {
     position: relative;
@@ -73,13 +73,13 @@ body {
     background: url("images/корзина.png") center/contain no-repeat;
 }
 
-/* СТРАНИЦА */
+
 
 .about-page {
     background: #021033;
 }
 
-/* БЕГУЩАЯ СТРОКА */
+
 
 .marquee {
     width: 100%;
@@ -110,7 +110,7 @@ body {
     }
 }
 
-/* ЗАГОЛОВКИ */
+
 
 .about-title {
     font-family: 'Brawler';
@@ -122,7 +122,7 @@ body {
     margin: 70px 0 20px;
 }
 
-/* ЖИТЕЛИ */
+
 
 .creatures-grid {
     width: 84%;
@@ -134,7 +134,6 @@ body {
     gap: 94px 117px;
 }
 
-/* ===== ПЕРЕВОРАЧИВАЮЩИЕСЯ КАРТОЧКИ ===== */
 
 .creature-card {
     height: 498px;
@@ -204,10 +203,6 @@ body {
     text-align: center;
 }
 
-/* НАВИГАЦИЯ */
-
-/* ===== НАВИГАЦИЯ ===== */
-
 .navigation-section {
     width: 100%;
     max-width: 1440px;
@@ -269,7 +264,7 @@ body {
     line-height: 1.15;
 }
 
-/* ===== АДАПТИВ ШАПКИ 769px–1100px ===== */
+
 
 @media (min-width: 769px) and (max-width: 1100px) {
     .about-logo {
@@ -290,7 +285,7 @@ body {
     }
 }
 
-/* ===== АДАПТИВ ДО 768px ===== */
+
 @media (min-width: 769px) and (max-width: 1200px) {
 
     .creature-front button {
@@ -442,7 +437,7 @@ body {
     }
 }
 
-/* ===== АДАПТИВ ДО 480px ===== */
+
 
 @media (max-width: 480px) {
     .about-logo {
@@ -531,7 +526,7 @@ body {
     right: -555px;
     top: 220px;
 }
-/* фикс кнопок в карточках существ */
+
 
 .creature-front button {
     max-width: 80%;

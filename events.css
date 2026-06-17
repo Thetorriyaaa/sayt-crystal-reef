@@ -19,7 +19,7 @@ body {
     src: url('fonts/Brawler-Regular.ttf') format('truetype');
 }
 
-/* ШАПКА */
+
 .events-header {
     position: relative;
     height: 220px;
@@ -73,7 +73,7 @@ body {
     min-height: 100vh;
 }
 
-/* ===== АДАПТИВ ШАПКИ 769px–1100px ===== */
+
 @media (min-width: 769px) and (max-width: 1100px) {
     .events-logo {
         font-size: 42px;
@@ -154,7 +154,7 @@ body {
     min-height: 100vh;
 }
 
-/* ===== ВЕРХНИЙ БЛОК ===== */
+
 .events-intro {
     max-width: 1440px;
     margin: 0 auto;
@@ -182,7 +182,7 @@ body {
     letter-spacing: 1.5px;
 }
 
-/* ===== ПЛАКАТЫ ===== */
+
 .posters-section {
     margin-top: clamp(60px, 8vw, 120px);
 }
@@ -207,7 +207,7 @@ body {
     display: block;
 }
 
-/* ===== ЭКСПОНАТЫ НЕДЕЛИ ===== */
+
 .weekly-section {
     max-width: 1440px;
     margin: 0 auto;
@@ -265,7 +265,7 @@ body {
     letter-spacing: 1.5px;
 }
 
-/* ===== ДО 768px ===== */
+
 @media (max-width: 768px) {
     .events-intro {
         padding-top: 20px;
@@ -296,7 +296,7 @@ body {
     }
 }
 
-/* ===== ДО 480px ===== */
+
 @media (max-width: 480px) {
     .events-text {
         width: 88%;
