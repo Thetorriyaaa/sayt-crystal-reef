@@ -1215,3 +1215,10 @@ body {
         display: block;
     }
 }
+@media (max-width: 430px) {
+
+    .screen1 {
+        zoom: 0.85;
+    }
+
+}
