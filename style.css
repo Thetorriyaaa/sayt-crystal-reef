@@ -1224,3 +1224,10 @@ body {
         top: 1060px;
     }
 }
+/* только телефон — поднять книгу */
+
+@media (max-width: 480px) {
+    .book-wrapper {
+        top: 120px;
+    }
+}
