@@ -1104,3 +1104,46 @@ body {
 }
 
 
+/* ===== ТОЛЬКО ТЕЛЕФОН: 1 ЭКРАН ===== */
+
+@media (max-width: 480px) {
+    .screen1 {
+        height: 720px;
+    }
+
+    .main-box {
+        top: 210px;
+        height: 360px;
+    }
+
+    .img-left {
+        width: 190px;
+        left: 13%;
+        top: 350px;
+    }
+
+    .text {
+        top: 500px;
+        width: 220px;
+        font-size: 20px;
+    }
+
+    .crystal {
+        width: 105px;
+    }
+
+    .crystal1 {
+        left: 56%;
+        top: 320px;
+    }
+
+    .crystal2 {
+        left: 59%;
+        top: 310px;
+    }
+
+    .crystal3 {
+        left: 47%;
+        top: 320px;
+    }
+}
